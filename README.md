@@ -1,1 +1,11 @@
-# Gesture-Control-Wall-E-Robot-esp32-
+# Đồ án Học máy: Nhận dạng cử chỉ tay điều khiển Robot
+Đề tài: Hệ thống nhận diện cử chỉ bằng MediaPipe và Machine Learning (KNN) để điều khiển robot 4 bánh (Tiến, Lùi, Trái, Phải, Dừng).
+
+## Cài đặt môi trường
+Mở Terminal và chạy lệnh sau để cài đặt các thư viện cần thiết:
+pip install pandas scikit-learn mediapipe opencv-python matplotlib
+
+## Hướng dẫn chạy code
+- Bước 1: Chạy file `1_collect_data.py` (Nếu muốn tự thu thập lại dữ liệu cử chỉ của riêng bạn).
+- Bước 2: Chạy file `2_train_model.py` để huấn luyện mô hình AI và sinh ra file `gesture_model.pkl`.
+- Bước 3: Chạy file `3_run_simulation.py` để mở Bảng điều khiển ảo, giơ tay trước camera để test mô hình.
